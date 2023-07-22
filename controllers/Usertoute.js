@@ -74,6 +74,7 @@ export const Logout = (req, res) => {
 
      }).json({
           success: true,
+          
      })
 };
 

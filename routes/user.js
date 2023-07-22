@@ -7,7 +7,7 @@ const router = exp.Router();
 router.post('/new', Newuser);
 router.post('/login', login);
 router.get('/me', Isothentication, getMyprofile);
-router.get('/logme', Logout);
+router.get('/logme', Isothentication, Logout);
 
 
 
