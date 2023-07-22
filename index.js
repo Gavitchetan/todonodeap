@@ -8,6 +8,7 @@ config({
      path: "./data/config.env"
 })
 
+const app = express();
 app.use(
      cors({
           origin: [process.env.FRONTEND_URL],
@@ -16,7 +17,6 @@ app.use(
      })
 );
 
-const app = express();
 Store()
 
 app.use(express.json())
