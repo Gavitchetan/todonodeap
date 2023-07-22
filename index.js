@@ -7,6 +7,15 @@ import TaskRouter from "./routes/task.js";
 config({
      path: "./data/config.env"
 })
+
+app.use(
+     cors({
+          origin: [process.env.FRONTEND_URL],
+          methods: ["GET", "POST", "PUT", "DELETE"],
+          credentials: true,   // to send cookie on brovser
+     })
+);
+
 const app = express();
 Store()
 
