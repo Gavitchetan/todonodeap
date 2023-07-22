@@ -4,6 +4,7 @@ import Store from "./data/Databse.js";
 import userrouter from "./routes/user.js";
 import { config } from "dotenv"
 import TaskRouter from "./routes/task.js";
+import cors from 'cors'
 config({
      path: "./data/config.env"
 })
